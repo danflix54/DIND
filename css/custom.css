@@ -1,0 +1,105 @@
+/*para webForms*/
+/*navbar*/   
+ul.nav li.dropdown:hover ul.dropdown-menu { display: block; } /*con esta simple linea se despliega el submenu en el over (mejor que click) y tambien con click*/
+.navbar-default{background-color:#0072BC;}/*color de fondo de la toolbar*/
+.navbar-default .navbar-nav > li > a {color: white;}/*color de la tipografia*/
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {color:#01bdf2; background-color:#0072bc;}/*color en el over de la tipografia background-color:#0072bc;*/
+.navbar ul li .dropdown-menu{border:0px; background-color:#0072bc !important;}/*menu desplegable. background-color:#0072bc !important; */
+.navbar-default .navbar-toggle .icon-bar {background-color: white;} /*icono para desplegar menu en celulares*/
+
+.input-sm {margin-bottom: 0;font-size: 80%;height: 35px;}
+select.input-sm {height: 35px;}
+.form-group {margin-bottom: 20px;}
+label {font-size: 90%;margin-bottom: 2px;font-weight: 500;}
+
+/*label { font-size:11px; }*/
+.validator { display:none; }
+.col-lg-3, .col-md-3 { margin-bottom:10px; }
+.col-lg-3, .col-lg-12 { padding-right:0px; }
+.myRow { margin-bottom: 0px; } /*para el formulario inline*/
+
+.error { color:Red; font-size:120%; font-weight:bold; }
+.imgCelulares{ max-width: 100%; }
+
+/*******************************************CheckBox******************************************************************************/
+.myCheckBox input[type=checkbox]
+{
+    width: 18px; height: 18px;
+    border: 1px solid rgb(192,192,192); /*0.0625em*/
+    border-radius: 0.25em; -webkit-border-radius: 0.25em; -moz-border-radius: 0.25em;
+    vertical-align: middle; line-height: 1em; text-indent: 20px; font-size: 14px;
+}
+/*********************************************************************************************************************************/
+
+/*******************************************************CALENDAR******************************************************************/
+.myCalendar, .myCalendar td { text-align:center; padding:3px; }
+.calendarWrapper { background-color: #e8e8e8; border:1px solid #c7c7c7; padding: 5px; display: inline-block; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.calendarDayToday { background-color:White; font-weight:bolder; -moz-box-shadow:inset 0 0 4px 0 #949494; -webkit-box-shadow:inset 0 0 4px 0 #949494; box-shadow:inset 0 0 4px 0 #949494; border-collapse:collapse; display: block; }
+.calendarDaySelected { font-weight:bolder; color:White; -moz-box-shadow:inset 0 0 5px 0 Black; -webkit-box-shadow:inset 0 0 5px 0 Black; box-shadow:inset 0 0 5px 0 Black; border-collapse:collapse; display: block; }
+/*********************************************************************************************************************************/
+
+/*******************************************gridview (tables)*************************************************************************/
+.table-striped td { border:1px solid #dddddd; border-collapse:collapse; text-align:center; font-size:11px; padding:3px; }
+.table-striped th { border:1px solid #dddddd; border-collapse:collapse; text-align:center; font-weight:bold; font-size:small; background-color:#eeeeee; color:#444444; }
+/*********************************************************************************************************************************/
+
+/**********************validacion del formulario*************************/
+.field-validation-error {color: #f00;}
+.field-validation-valid { display: none;}
+.input-validation-error { border: 1px solid #f00; background-color:#fee; }
+.validation-summary-errors { font-weight: bold; color: #f00; border: 1px solid #f00; background-color:#fee; display:inline-block; padding:10px 30px 0 0; margin-bottom:10px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.validation-summary-valid { display: none;}
+/*************************************************************************/
+
+/****************************ya viene seteado******************************/
+.body-content { padding-left: 10px; padding-right: 10px;} /* Set padding to keep content from hitting the edges */
+.dl-horizontal dt { white-space: normal; } /* Override the default bootstrap behavior where horizontal description lists will truncate terms that are too long to fit in the left column */
+input, select, textarea { max-width: 300px; min-width:200px; }/* Set width on the form input elements since they're 100% wide by default */
+/**************************************************************************/
+
+/*****************************footer****************************************/
+#block-menu-menu-footer-2{padding-top:15px;}
+.footerBtns{ text-align:center; float:right; }
+.main-footer{border-top:1px solid #eaeaea}
+/***************************************************************************/
+
+/*****************************loading gif****************************************/
+.loading {
+    display: none;
+    font-family: Arial;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: #000;
+    background: rgba(0,0,0,.9);
+    z-index: 100;
+}
+/*******************************************************************************/
+
+/*****************************loading gif****************************************/
+.loading-ajax {
+    display: none;
+    font-family: Arial;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: #000;
+    background: rgba(0,0,0,.9);
+    z-index: 100;
+}
+/*******************************************************************************/
+
+/*pantalla menor a 800px*/
+@media screen and (max-width:800px) {
+    input, select, textarea { min-width:0; margin-bottom:2px; }
+    .row, .form-inline, .form-group, .myRow, .form-control{ margin-bottom:0px; }
+    .col-lg-3, .col-lg-12 { padding-right:15px; }
+    #block-menu-menu-footer-2{padding-top:0px;}
+    .footerBtns{ text-align:left; float:left; }
+}
